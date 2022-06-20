@@ -1,0 +1,214 @@
+
+.Thirdcomp{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galaxys img{
+    width: 22rem;
+
+}
+
+.fourthComp img{
+    width: 22rem;
+}
+
+.p-div{
+    width: 70%;
+}
+
+.fourthComp{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+.textdiv{
+    width: 30%;
+    position: relative;
+}
+
+.crypto{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    position: relative;
+}
+
+.crypto h2{
+    width: 30rem;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+
+.arrow1{
+    position: absolute;
+    width:  10%;
+    top: 10%;
+    left: 25%;
+}
+
+.live{
+    position: absolute;
+    width:  10%;
+    top: 80%;
+    left: 25%;
+}
+
+.bitcoin{
+    position: absolute;
+    width:  10%;
+    top: 10%;
+    left: 59%;
+}
+
+.eth{
+    position: absolute;
+    width:  10%;
+    top: 70%;
+    right: 10%;
+}
+
+.video{
+    position: absolute;
+    width:  7%;
+    top: 70%;
+    right: 50%;
+}
+
+.head{
+    position: absolute;
+    width:  7%;
+    top: 20%;
+    right: 10%;
+}
+
+.journey{
+    height: 70vh;
+    width: 100%;
+    margin-top: 10rem;
+    position: relative;
+}
+
+.journey h1{
+    margin-left: 8rem;
+
+}
+
+.journey img{
+    width: 70rem;
+    margin-left: 10rem;
+}
+
+@media screen and (max-width: 1000px){
+    .Thirdcomp{
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      
+    }
+
+    h3{
+        margin: 0 30px;
+    }
+    .p-div{
+        width: 80%;
+        margin: 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (max-width: 700px){
+.fourthComp{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.textdiv{
+    width: 70%;
+}
+
+
+
+
+.cryptobox{
+    width: 100%;
+}
+
+.crypto h2{
+    width: 20rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5rem;
+    margin-left: 1rem;
+  
+    
+
+}
+.journey{
+    height: 30vh;
+    width: 100%;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.journey h1{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+   
+.journey img{
+    width: 25rem;
+    margin: 0;
+}
+
+}
+
+.footer{
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+}
+.footer img{
+    width: 10rem;
+}
+
+.footer .lo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 11%;
+}
+
+.rows{
+    height: 20vh;
+    width: 10rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

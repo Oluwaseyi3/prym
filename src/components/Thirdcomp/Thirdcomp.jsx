@@ -13,25 +13,41 @@ import {useMediaQuery, useTheme,} from '@mui/material';
 import os from "../images/os.png"
 import sos from "../images/sos.png"
 import bac from "../images/bac.png"
+import news from "../images/news.png"
+import newsb from "../images/newsb.png"
+import arrow from "../images/arrow.png"
+import wallet from "../images/wallet.png"
+import zag from "../images/zag.png"
+import lil from "../images/lil.png"
+import mobile from "../images/mobile.png"
+import {AiFillFacebook} from "react-icons/ai"
+import {AiFillInstagram} from "react-icons/ai"
 
+import {AiFillTwitterSquare} from "react-icons/ai"
 const Thirdcomp = () => {
   const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <div>
       <div className='Thirdcomp'>
         <div>
             <div>
+            <img src={news} alt=""   />
                 <h3>Flicks</h3>
                 <div className='p-div'>
                 <p>With the new Prymshare flicks, you can upload short audios and videos for your followers to enjoy.</p>
+              {!isMatch && <img src={arrow} alt="" className='arrow'/>}  
             </div>
             </div>
         </div>
         <div className='galaxys'>
         {
-          isMatch?    <img src={os} alt="" /> :      <img src={secondimage} alt="" />
+          isMatch?  <>
+              <img src={os} alt="" className='os' />
+               <img src={lil} alt="" className='lil' />
+          </>  
+           :  <> <img src={newsb} alt="" className='newsb'   />    <img src={secondimage} alt="" /></>
         }
        
         </div>
@@ -40,14 +56,16 @@ const Thirdcomp = () => {
     <div className='fourthComp'>
           <div className='fourthComp-one'>
           {
-          isMatch?    <img src={sos} alt="" /> :       <img src={last} alt=""/>
+          isMatch?    <img src={sos} alt="" /> :    <> <img src={last} alt=""/>       <img src={wallet} alt="" className='wallet'  /></>  
         }
         
           </div>
           <div className='textdiv'>
+          <img src={zag} alt="" className='zag'/>
                <h1>Wallet</h1> 
                <p>As a creator, you can now get tips from your followers and those tips can be accumulated and stored in your wallet.
               You can also keep your earnings for as long as you want and withdraw at anytime</p>
+         
           </div>
     </div>
 
@@ -71,7 +89,10 @@ const Thirdcomp = () => {
 
     <div className='journey'>
         <h1>Begin Your Journey Now</h1>
-        <img src={bac} alt=""  />
+        {
+          isMatch?   <img src={mobile} alt=""  /> :  <img src={bac} alt=""  />
+        }
+     
     </div>
 
     <div className="footer">
@@ -81,10 +102,10 @@ const Thirdcomp = () => {
         <h4>Lagos, Nigeria</h4>
         <h4>Copyright Prymshare Media Inc 2022</h4>
        </div>
-       <div className='rows'>
-        <h4>facebook</h4>
-        <h4>instagram</h4>
-        <h4>twitter</h4>
+       <div className='rowse'>
+        <div className='icondiv'><AiFillFacebook size="1rem"/>{!isMatch && <h4>facebook</h4> }</div>
+        <div className='icondiv'><AiFillInstagram/>{!isMatch && <h4>instagram</h4> }</div>
+        <div className='icondiv'><AiFillTwitterSquare/>{!isMatch && <h4>twitter</h4> }</div>
        </div>
     </div>
     </div>

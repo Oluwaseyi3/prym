@@ -8,6 +8,10 @@ import one from "../images/one.png"
 import two from "../images/two.png"
 import three from "../images/three.png"
 import four from "../images/four.png"
+import ha from "../images/ha.png"
+import hb from "../images/hb.png"
+import hash from "../images/hash.png"
+import dash from "../images/dash.png"
 
 const Home = () => {
 
@@ -23,14 +27,18 @@ const Home = () => {
   return (
     <div>
        <div className='home-body'>
+       <img src={ha} alt="" className='ha'/>
+       <img src={hash} alt="" className='hash'/>
+       <img src={hb} alt="" className='hb'/>
       <div className='home-body-one'>
          <div className='text'>
            <h1>
            This is the home<br/>
             of content<br/>
-           Where your content is 
+           Where your content <br/>
+           is <span>shared  <br/>  <img src={dash} alt="" /></span>
            </h1>
-
+          
            <a>Sign Up</a>
          </div>
     

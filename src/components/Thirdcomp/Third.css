@@ -5,7 +5,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
+
+.galaxys .newsb{
+    width: 40px;
+    position: absolute;
+    top: 30%;
+
+}
+
+.arrow{
+    width: 40px;
+    margin-left: 20rem;
+}
+
+.Thirdcomp h3{
+    font-size: 50px;
+}
+
 
 .galaxys img{
     width: 22rem;
@@ -17,7 +35,24 @@
 }
 
 .p-div{
-    width: 70%;
+    width: 50%;
+}
+
+.rows .icondiv h3{
+    text-align: right;
+}
+
+.rows .icondiv{
+    width: 7rem;
+    height: 4vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 18px 0;
+}
+
+.p-div p{
+    font-size: 20px;
 }
 
 .fourthComp{
@@ -26,6 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly; 
+    position: relative;
 }
 
 .textdiv{
@@ -108,6 +144,24 @@
     margin-left: 10rem;
 }
 
+.fourthComp-one .wallet{
+    width: 2.5rem;
+    position: absolute;
+    bottom: 30%;
+}
+
+.textdiv p{
+    font-size: 20px;
+}
+
+.textdiv .zag{
+    position: absolute;
+    width: 4rem;
+     right: 5%;
+}
+
+
+
 @media screen and (max-width: 1000px){
     .Thirdcomp{
         height: 80vh;
@@ -130,28 +184,41 @@
         justify-content: center;
     }
 
+    
 
 }
 
 @media screen and (max-width: 700px){
 .fourthComp{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: space-around;
+}
+
+ .galaxys .lil{
+    width: 2rem;
+    margin-left: 20rem;
 }
 
 .textdiv{
     width: 70%;
 }
 
-
+.galaxys .os{
+    margin-left: 59px;
+}
 
 
 .cryptobox{
     width: 100%;
+  
+}
+
+.crypto {
+  height: 50vh;
 }
 
 .crypto h2{
@@ -161,12 +228,12 @@
     align-items: center;
     margin-top: 5rem;
     margin-left: 1rem;
-  
+   font-size: 24px;
     
 
 }
 .journey{
-    height: 30vh;
+    height: 70vh;
     width: 100%;
     margin-top: 3rem;
     position: relative;
@@ -178,11 +245,18 @@
 }
    
 .journey img{
-    width: 25rem;
+    width: 20rem;
     margin: 0;
+}
+.video{
+    position: absolute;
+    width:  10%;
+    top: 80%;
+    right: 50%;
 }
 
 }
+
 
 .footer{
     height: 20vh;
@@ -211,4 +285,53 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.rowse{
+    height: 20vh;
+    width: 10rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px){
+    .footer{
+        height: 30vh;
+        width: 100%;
+        background-color: black;
+        margin-top: 10rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        color: aliceblue;
+    }
+
+    .footer .lo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+    }
+
+    .footer .rows{
+        width: 90%;
+    }
+
+    
+    .footer .rowse{
+        width: 30%;
+    }
+
+    .rowse .icondiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+    }
+
+    .footer h2{
+        font-size: 20px;
+        width: 100%;
+    }
 }

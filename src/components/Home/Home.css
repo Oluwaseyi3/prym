@@ -10,21 +10,32 @@
     height: 100vh;
     position: relative;
     overflow-y: hidden;
+ 
+}
 
-  
+.home-body h1{
+    font-size: 89px; font-weight: 500;
+}
+
+.ha{ position: absolute; width: 2rem; left: 50%; top: 30%;}
+.hb{position: absolute; width: 2rem; right:10%; top: 30%;}
+.hash{
+    position: absolute; width: 4rem; left: 30%; top: 30%;
 }
 
 
 
 .home-body-one{
     width: 70%;
-    height: 80vh; 
+    height: 90vh; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
     margin-left: 4%;
 }
+
+
 
 .home-body-two{
     width: 50%;
@@ -36,11 +47,32 @@
 
 .home-body-one .text{
     height: 100%;
+   
 }
 
 .home-body-one h1{
     font-size: 3.5rem;
     line-height: 5rem;
+}
+
+.text h1{
+    margin-bottom: 10px;
+}
+
+.dash{
+    position: absolute; width: 10rem; left: 10%; top: 59%;
+}
+
+.text span{
+    background: linear-gradient(90deg, #E85353 0%, #3664F4 100%);
+    -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+  width: 10px;
+}
+
+.text span img{
+    margin-bottom: 30px;
 }
 
 a{
@@ -51,7 +83,7 @@ a{
   color: white;
   border: solid 0px none;
   cursor: pointer;
-  margin-top: 30px;
+
 }
 
 .home-body-two{
@@ -96,7 +128,7 @@ a{
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        height: 135vh;
+        height: 90vh;
     
         overflow-x: hidden;
     }
@@ -143,16 +175,34 @@ a{
 
     @media screen and (max-width: 599px){
         .home-body{
-            height: 125vh;
+            height: 105vh;
         
         }
+        .hash{
+            position: absolute; width: 4rem; left: 50%; top: 15%;
+        }
 
+        .text h1{
+            font-size: 40px;
+        }
+
+        .home-body-one .text{
+            height: 50vh;
+            width: 100%;
+        }
 
         .home-body-one{
             width: 100%;
             height: 50vh; 
             position: relative;
             margin-left: 4%;
+        }
+
+        .ha{
+            position: absolute;
+            width: 2rem;
+            left: 50%;
+            top: 50%;
         }
     }
 

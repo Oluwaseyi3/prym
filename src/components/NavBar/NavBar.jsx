@@ -13,7 +13,7 @@ import {useMediaQuery, useTheme,} from '@mui/material';
 
 const NavBar = () => {
   const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
 
   const [sidebar, setSidear] = useState(false)
 
@@ -28,7 +28,7 @@ const NavBar = () => {
  
     
            {
-            sidebar ?
+            !sidebar ?
             (  <div className='navbar'>
               <img src={small} alt=""/>
             <BiMenuAltRight size="2rem" onClick={showSiderbar}/>

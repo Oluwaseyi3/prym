@@ -9,6 +9,9 @@ import bitcoin from "../images/bitcoin.png"
 import eth from "../images/eth.png"
 import video from "../images/video.png"
 import head from "../images/head.png"
+import { Input } from '@mui/material';
+import InputLabel from '@mui/material/InputLabel';
+
 import {useMediaQuery, useTheme,} from '@mui/material';
 import os from "../images/os.png"
 import sos from "../images/sos.png"
@@ -93,6 +96,23 @@ const Thirdcomp = () => {
           isMatch?   <img src={mobile} alt=""  /> :  <img src={bac} alt=""  />
         }
      
+    </div>
+
+    <div className="email">
+        <div>
+        <h1>Join our Waitlist</h1>
+        <h4>Provide us your email & be the first to know when we launch </h4>
+        </div>
+
+        <div>
+          <InputLabel>Email
+           <Input placeholder=""/>
+          </InputLabel>
+        </div>
+        
+        <div>
+          <a>Join List</a>
+        </div>
     </div>
 
     <div className="footer">

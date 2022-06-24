@@ -40,7 +40,7 @@ const NavBar = () => {
                    <h3>Contact Us</h3>
                    <h3>FAQs</h3>
                    <h3>Blogs</h3>
-                   <h3>Sign Up</h3>
+                   <h3>Join Waitlist</h3>
                    <h3>Login</h3>
             </div>
            }

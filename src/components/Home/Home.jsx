@@ -36,10 +36,10 @@ const Home = () => {
            This is the home<br/>
             of content<br/>
            Where your content <br/>
-           is <span>shared  <br/>  <img src={dash} alt="" /></span>
+           is <span>shared  <br/> </span> <img src={dash} alt="" />
            </h1>
           
-           <a>Sign Up</a>
+           <a>Join Waitlist</a>
          </div>
     
      
